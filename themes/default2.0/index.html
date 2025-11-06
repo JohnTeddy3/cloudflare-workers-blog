@@ -96,16 +96,18 @@
 							<a href="/" title="{{ &OPT.siteName }}" rel="home">{{ &OPT.siteName }}</a>
 							<br ...="" />
 							<a class="site-description">{{ &OPT.siteDescription }}</a></div>
-						<nav id="site-navigation" class="themonic-nav" role="navigation">
-							<a class="assistive-text" href="#main" title="Skip to content">Skip to content</a>
-							<ul id="menu-top" class="nav-menu">
-								{{ #widgetMenuList }}
-									<li id="menu-item-211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211">
-										<a href="{{ &url }}">{{ &title }}</a>
-									</li>
-								{{ /widgetMenuList }}
-							</ul>
-						</nav>
+				<nav id="site-navigation" class="themonic-nav" role="navigation">
+  				  <a class="assistive-text" href="#main" title="Skip to content">Skip to content</a>
+  				  {{ #widgetMenuList.length }}
+ 				   <ul id="menu-top" class="nav-menu">
+  				      {{ #widgetMenuList }}
+   				         <li id="menu-item-211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211">
+				                <a href="{{ &url }}">{{ &title }}</a>
+    				        </li>
+     				   {{ /widgetMenuList }}
+  				  </ul>
+				    {{ /widgetMenuList.length }}
+				</nav>
 						<!-- #site-navigation -->
 						<div class="clear"></div>
 					</header>
