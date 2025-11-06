@@ -97,16 +97,28 @@
 							<br ...="" />
 							<a class="site-description">{{ &OPT.siteDescription }}</a></div>
 			<nav id="site-navigation" class="themonic-nav" role="navigation">
-  			  <a class="assistive-text" href="#main" title="Skip to content">Skip to content</a>
- 			   <ul id="menu-top" class="nav-menu">
- 			       {{ #widgetMenuList }}
-  			          <li id="menu-item-211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211">
-  			              <a href="{{ &url }}">{{ &title }}</a>
- 			           </li>
- 			       {{ /widgetMenuList }}
-			    </ul>
+			    <a class="assistive-text" href="#main" title="Skip to content">Skip to content</a>
+			    <ul id="menu-top" class="nav-menu">
+			        {{ #widgetMenuList }}
+			            <li id="menu-item-211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211">
+			                <a href="{{ &url }}">{{ &title }}</a>
+			            </li>
+			        {{ /widgetMenuList }}
+			   </ul>
 			    <div class="site-tagline">灵感与美的交汇处</div>
 			</nav>
+			
+			<style>
+			.site-tagline {
+			    text-align: center;
+			    font-size: 16px;
+			    color: #16a1e7;
+			    padding: 8px 0;
+			    border-bottom: 1px solid #16a1e7;
+			    font-family: "Microsoft YaHei", sans-serif;
+			    letter-spacing: 2px;
+			}
+			</style>
 						<!-- #site-navigation -->
 						<div class="clear"></div>
 					</header>
