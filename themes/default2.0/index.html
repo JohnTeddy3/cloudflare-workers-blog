@@ -88,38 +88,7 @@
 				<link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.3.2/styles/tomorrow-night-bright.min.css">
 				<script src='https://cdn.staticfile.org/highlight.js/10.3.2/highlight.min.js'></script>
 				<style>
-#site-banner {
-  width: 100%;
-  height: 300px;
-  background-image: url('https://picsum.photos/id/1015/1200/300');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 创建 Banner 元素
-  var banner = document.createElement('div');
-  banner.id = 'site-banner';
-  banner.textContent = '欢迎来到展的博客';
-  
-  // 找到 header 元素
-  var header = document.querySelector('#masthead');
-  if (header && header.parentNode) {
-    // 插在 header 后面（框架内）
-    header.parentNode.insertBefore(banner, header.nextSibling);
-  }
-});
-</script>
-
-{{ &OPT.codeBeforBody }}
+                {{ &OPT.codeBeforBody }}
 
 			</head>
 			<body class="home blog logged-in custom-font-enabled single-author hfeed">
